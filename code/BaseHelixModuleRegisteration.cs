@@ -10,7 +10,7 @@ namespace Sitecon.Foundation.Synthesis
 
         protected override string ConfigurationName => this.GetType().Assembly.GetName().Name;
 
-        protected virtual string HelixModuleName => this.ConfigurationName.Substring(this.ConfigurationName.LastIndexOf(".", StringComparison.Ordinal) + 1);
+        protected  string HelixModuleName => this.ConfigurationName.Substring(this.ConfigurationName.LastIndexOf(".", StringComparison.Ordinal) + 1);
 
         protected override IEnumerable<string> IncludedTemplates
         {
@@ -19,7 +19,7 @@ namespace Sitecon.Foundation.Synthesis
 
         protected override string NamespaceTemplatePathRoot => $"/sitecore/templates";
 
-        protected override string ModelOutputFilePath => $"{this.HelixModuleType}/{this.HelixModuleName}/code/Synthesis.Model.cs";
+        protected override string ModelOutputFilePath => $"/{this.HelixModuleType}/{this.HelixModuleName}/code/Models/Synthesis.Model.cs";
 
         protected override string RootGeneratedNamespace => $"{this.ConfigurationName}.Models";
     }
