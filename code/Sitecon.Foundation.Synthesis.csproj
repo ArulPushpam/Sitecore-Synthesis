@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>Sitecon.Foundation.Synthesis</RootNamespace>
+    <AssemblyName>Sitecon.Foundation.Synthesis</AssemblyName>
+    <SitecoreRoleType>website</SitecoreRoleType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Remove="C:\Users\ArulM\.nuget\packages\synthesis.mvc\9.1.4\contentFiles\any\any\App_Config\Include\Synthesis\Synthesis.Mvc.config" />
+    <Content Remove="C:\Users\ArulM\.nuget\packages\synthesis\9.1.4\contentFiles\any\any\App_Config\Include\Synthesis\Synthesis.AutoRegenerate.config" />
+    <Content Remove="C:\Users\ArulM\.nuget\packages\synthesis\9.1.4\contentFiles\any\any\App_Config\Include\Synthesis\Synthesis.config" />
+    <Content Remove="C:\Users\ArulM\.nuget\packages\synthesis\9.1.4\contentFiles\any\any\App_Config\Include\Synthesis\Synthesis.ContentHub.config.disabled" />
+    <Content Remove="C:\Users\ArulM\.nuget\packages\synthesis\9.1.4\contentFiles\any\any\App_Config\Include\Synthesis\Synthesis.ControlPanel.config" />
+    <Content Remove="C:\Users\ArulM\.nuget\packages\synthesis\9.1.4\contentFiles\any\any\App_Config\Include\Synthesis\Synthesis.ControlPanel.IdentityServer.config.disabled" />
+    <Content Remove="C:\Users\ArulM\.nuget\packages\synthesis\9.1.4\contentFiles\any\any\App_Config\Include\Synthesis\Synthesis.LocalConfig.config.example" />
+    <Content Remove="C:\Users\ArulM\.nuget\packages\synthesis\9.1.4\contentFiles\any\any\App_Config\Include\Synthesis\Synthesis.Startup.config" />
+    <Content Remove="Synthesis\Synthesis.ControlPanel.IdentityServer.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Synthesis" Version="9.1.4" />
+    <PackageReference Include="Synthesis.Core" Version="9.1.4" />
+    <PackageReference Include="Synthesis.Mvc" Version="9.1.4" />
+    <PackageReference Include="Synthesis.Mvc.Core" Version="9.1.4" />
+  </ItemGroup>
+</Project>
